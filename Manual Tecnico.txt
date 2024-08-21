@@ -1,0 +1,30 @@
+Manual Técnico:
+
+1.	HTML (index.html):
+o	El usuario puede ingresar una temperatura en un campo de entrada (<input>)
+    y seleccionar el tipo de conversión (<select>).
+o	Se proporciona un botón (<button>) para realizar la conversión,
+    y el resultado se muestra en un artículo (<article>) con el id resultado.
+
+2.	CSS (estilos.css):
+o	El diseño de la página tiene un fondo azul claro, con elementos centrados y estilizados.
+o	La sección principal tiene bordes redondeados, una sombra suave y se ajusta a una vista centrada.
+o	El resultado se muestra en un color azul oscuro para resaltar el valor convertido.
+
+3.	JavaScript (script.js):
+o	Se obtienen los elementos del DOM (botonConvertir, campoTemperatura, selectConversion, contenedorResultado)
+    usando getElementById.
+o	Se agrega un eventListener al botón que escucha el evento click.
+o	Al hacer clic, se obtiene el valor del campo de entrada (campoTemperatura.value)
+    y el tipo de conversión seleccionado (selectConversion.value).
+o	Se utilizan condicionales if-else para verificar el tipo de conversión:
+	Si es de Celsius a Fahrenheit (CtoF), se realiza la conversión y se muestra el resultado en Fahrenheit.
+	Si es de Fahrenheit a Celsius (FtoC), se realiza la conversión y se muestra el resultado en Celsius.
+	Si no se selecciona un tipo de conversión válido, se muestra un mensaje de error.
+o	El resultado se muestra en el contenedor resultado usando textContent.
+
+Este ejercicio introduce el uso de condicionales para seleccionar entre diferentes opciones y
+calcular conversiones basadas en la entrada del usuario,
+demostrando cómo construir una aplicación simple pero funcional.
+
+Github:
